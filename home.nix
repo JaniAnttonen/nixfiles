@@ -1,6 +1,16 @@
 { config, pkgs, ... }:
 
-{
+let
+  imports = [
+    ./tmux.nix
+    ./shell.nix
+    ./neovim.nix
+    #./vscode.nix
+  ];
+
+in {
+  inherit imports;
+  
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "jani";
@@ -19,8 +29,49 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  # Golang
+  programs.go.enable = true;
+
+  # Starship
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
   # Packages
-  home.packages = [
-    pkgs.tmux
+  home.packages = with pkgs; [
+    awscli
+    bat
+    cachix
+    curl
+    docker
+    docker-compose
+    docker-machine
+    elixir
+    erlang
+    fzf
+    graphviz
+    gnupg
+    nodejs
+    pinentry_mac
+    podman
+    protobuf
+    fish
+    rustup
+    vscode
+    wasmer
+    wget
+    yarn
+    zola
+    python3
+    tmux
+    tectonic
   ];
+
+  # Git config
+  programs.git = {
+    enable = true;
+    userName = "JaniAnttonen";
+    userEmail = "jani.anttonen@protonmail.ch";
+  };
 }
