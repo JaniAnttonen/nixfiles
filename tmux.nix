@@ -7,8 +7,6 @@
     enable = true;
     escapeTime = 0;
     baseIndex = 1;
-    keyMode = "vi";
-    shortcut = "b";
 
     # Replaces ~/.tmux.conf
     extraConfig = ''

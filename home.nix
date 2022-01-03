@@ -53,6 +53,7 @@ in {
     graphviz
     gnupg
     nodejs
+    nodePackages.pnpm
     pinentry_mac
     podman
     protobuf
