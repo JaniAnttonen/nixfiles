@@ -5,7 +5,7 @@ let
     ./tmux.nix
     ./shell.nix
     ./neovim.nix
-    #./vscode.nix
+    ./vscode.nix
   ];
 
 in {
@@ -40,6 +40,7 @@ in {
 
   # Packages
   home.packages = with pkgs; [
+    alacritty
     awscli
     bat
     cachix
@@ -54,6 +55,7 @@ in {
     gnupg
     nodejs
     nodePackages.pnpm
+    nodePackages.node-gyp
     pinentry_mac
     podman
     protobuf
