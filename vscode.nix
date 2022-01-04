@@ -1,52 +1,39 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, vscode-utils, ... }:
 
 {
   programs.vscode = {
     enable = true;
     extensions = with pkgs.vscode-extensions; [
-      adamgirton.gloom
-      alefragnani.delphi-themes
-      alygin.vscode-tlaplus
-      andrejunges.Handlebars
-      anseki.vscode-color
-      atomiks.moonlight
-      bfanger.vscode-styled-jsx-plugin-scss
+      bbenoist.Nix
+    ]
+    ++ vscode-utils.extensionsFromVscodeMarketplace [
       bungcip.better-toml
-      chasestarr.inkjet
       chenxsan.vscode-standardjs
       christian-kohler.npm-intellisense
       christian-kohler.path-intellisense
       dbaeumer.vscode-eslint
-      dhedgecock.radical-vscode
-      dline.CobaltNext
       dracula-theme.theme-dracula
-      dzannotti.vscode-babel-coloring
       EditorConfig.EditorConfig
       esbenp.prettier-vscode
       firefox-devtools.vscode-firefox-debug
       flowtype.flow-for-vscode
       formulahendry.auto-close-tag
-      formulahendry.code-runner
       gaearon.subliminal
-      ginfuru.ginfuru-vscode-jekyll-syntax
       GitHub.github-vscode-theme
       GitHub.vscode-pull-request-github
       gleam-syntax.gleam-syntax
       golang.go
       GraphQL.vscode-graphql
-      HaaLeo.timing
       hbenl.vscode-mocha-test-adapter
       hbenl.vscode-test-explorer
       JakeBecker.elixir-ls
       James-Yu.latex-workshop
       JamesBirtles.svelte-vscode
-      jdforsythe.add-new-line-to-files
       jock.svg
       joelday.docthis
       joshpeng.sublime-babel-vscode
       JuanBlanco.solidity
       maximedenes.vscoq
-      mfeckies.handlebars-formatter
       mjmcloug.vscode-elixir
       mkxml.vscode-filesize
       monokai.theme-monokai-pro-vscode
@@ -73,14 +60,9 @@
       robinbentley.sass-indented
       rust-lang.rust
       rvest.vs-code-prettier-eslint
-      samverschueren.final-newline
       sdras.night-owl
       silvenon.mdx
-      SolarLiner.linux-themes
-      TabNine.tabnine-vscode
       teabyii.ayu
-      timdang.theme-tech49
-      TimonVS.ReactSnippetsStandard
       vincaslt.highlight-matching-tag
       vscode-icons-team.vscode-icons
       vscodevim.vim

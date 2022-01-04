@@ -5,7 +5,7 @@ let
     ./tmux.nix
     ./shell.nix
     ./neovim.nix
-    ./vscode.nix
+    # ./vscode.nix
   ];
 
 in {
@@ -61,7 +61,6 @@ in {
     protobuf
     fish
     rustup
-    vscode
     wasmer
     wget
     yarn
