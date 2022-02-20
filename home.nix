@@ -32,6 +32,9 @@ in {
   # Golang
   programs.go.enable = true;
 
+  # texlive
+  programs.texlive.enable = true;
+
   # Starship
   programs.starship = {
     enable = true;
@@ -53,14 +56,18 @@ in {
     fzf
     graphviz
     gnupg
+    libiconv
     nodejs
     nodePackages.pnpm
     nodePackages.node-gyp
+    openssl
     pinentry_mac
+    pkg-config
     podman
     protobuf
     fish
     rustup
+    vscode-with-extensions
     wasmer
     wget
     yarn

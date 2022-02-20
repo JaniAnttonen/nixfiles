@@ -2,6 +2,15 @@
 
 { config, lib, pkgs, ... }:
 
+# let customPlugins = {
+#     github-nvim-theme = pkgs.vimUtils.buildVimPlugin {
+#         name = "github-nvim-theme";
+#         src = pkgs.fetchgit {
+#             url = "https://github.com/projekt0n/github-nvim-theme";
+#         };
+#     };
+# };
+
 { programs.neovim = {
     enable = true;
     vimAlias = true;
@@ -39,6 +48,7 @@
 
         # Color schemes
         gruvbox-material
+        # github-nvim-theme
 
         # Visual stuff
         lightline-vim
@@ -180,6 +190,7 @@
         " colorscheme night-owl
         " colorscheme pink-moon
         colorscheme gruvbox-material
+        " colorscheme github_dark
 
         " Nerd tree settings
         let NERDTreeShowHidden=1

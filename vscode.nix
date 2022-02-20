@@ -7,8 +7,14 @@
       bbenoist.Nix
     ]
     ++ vscode-utils.extensionsFromVscodeMarketplace [
-      bungcip.better-toml
-      chenxsan.vscode-standardjs
+      {
+        name = "better-toml";
+        publisher = "bungcip";
+      }
+      {
+        name = "vscode-standardjs";
+        publisher = "chenxsan";
+      }
       christian-kohler.npm-intellisense
       christian-kohler.path-intellisense
       dbaeumer.vscode-eslint

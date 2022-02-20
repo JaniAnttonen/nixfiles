@@ -15,6 +15,9 @@
       export TERM="xterm-256color"
       bindkey -e
 
+      # OpenSSL for Rust builds
+      export PKG_CONFIG_PATH="${pkgs.openssl.dev}/lib/pkgconfig"
+
       # Start up Starship shell
       eval "$(starship init zsh)"
     '';
