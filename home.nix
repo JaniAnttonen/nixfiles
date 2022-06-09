@@ -61,6 +61,7 @@ in {
     nodePackages.pnpm
     nodePackages.node-gyp
     openssl
+    perl
     pinentry_mac
     pkg-config
     podman
@@ -68,7 +69,6 @@ in {
     fish
     rustup
     vscode-with-extensions
-    wasmer
     wget
     yarn
     zola

@@ -48,6 +48,7 @@
 
         # Color schemes
         gruvbox-material
+        catppuccin-nvim
         # github-nvim-theme
 
         # Visual stuff
@@ -181,6 +182,7 @@
 
         " Use gruvbox-hard
         let g:gruvbox_material_background = 'hard'
+        let g:catppuccin_flavour = "dusk"
 
         " Use color scheme in the lightline
         let g:lightline = {'colorscheme': 'gruvbox_material'}
@@ -189,7 +191,8 @@
         set background=dark
         " colorscheme night-owl
         " colorscheme pink-moon
-        colorscheme gruvbox-material
+        " colorscheme gruvbox-material
+        colorscheme catppuccin
         " colorscheme github_dark
 
         " Nerd tree settings
