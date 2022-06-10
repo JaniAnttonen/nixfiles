@@ -87,6 +87,9 @@
         Plug 'miguelmota/cairo.vim'
         call plug#end()
 
+        " Run Cairo linter on save
+        let g:cairo_linter_autosave = 1
+
         " Set true color mode
         if has('termguicolors')
             set termguicolors
