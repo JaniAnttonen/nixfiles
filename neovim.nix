@@ -49,7 +49,6 @@
         # Color schemes
         gruvbox-material
         catppuccin-nvim
-        # github-nvim-theme
 
         # Visual stuff
         lightline-vim
@@ -111,7 +110,7 @@
 
         " coc stuff
         set updatetime=300
-        set cmdheight=2
+        set cmdheight=1
         autocmd CursorHold * silent call CocActionAsync('highlight')
 
         " Remap autocomplete to tab without hijacking
@@ -180,20 +179,12 @@
         " For Neovim 0.1.3 and 0.1.4
         let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
-        " Use gruvbox-hard
-        " let g:gruvbox_material_background = 'hard'
-        let g:catppuccin_flavour = "dusk"
-
-        " Use color scheme in the lightline
-        let g:lightline = {'colorscheme': 'catppuccin'}
-
         " Color scheme
         set background=dark
-        " colorscheme night-owl
-        " colorscheme pink-moon
-        " colorscheme gruvbox-material
         colorscheme catppuccin
-        " colorscheme github_dark
+
+        " Catppuccin color scheme
+        let g:catppuccin_flavour = "dusk"
 
         " Nerd tree settings
         let NERDTreeShowHidden=1
@@ -235,7 +226,9 @@
         " Nerd tree toggle
         nmap <silent> f :NERDTreeToggle<CR>
 
+        " Lightline settings
         let g:lightline = {
+            \ 'colorscheme': 'catppuccin',
             \ 'active': {
             \   'left': [ [ 'mode', 'paste' ],
             \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
