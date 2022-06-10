@@ -20,9 +20,6 @@
 
         set-option -sg escape-time 10
 
-        # NOTE: you can use vars with $<var> and ${<var>} as long as the str is double quoted: ""
-        # WARNING: hex colors can't contain capital letters
-
         # --> Catppuccin
         thm_bg="#1e1e28"
         thm_fg="#dadae8"

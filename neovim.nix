@@ -181,11 +181,11 @@
         let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
         " Use gruvbox-hard
-        let g:gruvbox_material_background = 'hard'
+        " let g:gruvbox_material_background = 'hard'
         let g:catppuccin_flavour = "dusk"
 
         " Use color scheme in the lightline
-        let g:lightline = {'colorscheme': 'gruvbox_material'}
+        let g:lightline = {'colorscheme': 'catppuccin'}
 
         " Color scheme
         set background=dark
@@ -241,7 +241,7 @@
             \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
             \ },
             \ 'component_function': {
-            \   'gitbranch': 'fugitive#head'
+            \   'gitbranch': 'FugitiveHead'
             \ },
             \ }
         '';
