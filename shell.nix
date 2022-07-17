@@ -18,8 +18,8 @@
       # OpenSSL for Rust builds
       export PKG_CONFIG_PATH="${pkgs.openssl.dev}/lib/pkgconfig"
 
-      # Bun PATH
-      export PATH="$HOME/.bun/bin:$PATH"
+      # Foundry to PATH
+      export PATH=$PWD/.foundry/bin:$PATH
 
       # Start up Starship shell
       eval "$(starship init zsh)"

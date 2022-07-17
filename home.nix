@@ -46,6 +46,7 @@ in {
     alacritty
     awscli
     bat
+    bun
     cachix
     curl
     docker
