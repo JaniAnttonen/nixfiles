@@ -21,6 +21,9 @@
       # Foundry to PATH
       export PATH=$PWD/.foundry/bin:$PATH
 
+      # pip installs to PATH
+      export PATH=$PWD/Library/Python/3.8/bin/:$PATH
+
       # Start up Starship shell
       eval "$(starship init zsh)"
     '';
