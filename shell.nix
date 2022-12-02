@@ -21,6 +21,12 @@
       # Foundry to PATH
       export PATH=$PWD/.foundry/bin:$PATH
 
+      # Helios to PATH
+      export PATH=$PWD/.helios/bin:$PATH
+
+      # Cargo bins to path
+      export PATH="$HOME/.cargo/bin:$PATH"
+
       # pip installs to PATH
       export PATH=$PWD/Library/Python/3.8/bin/:$PATH
 
