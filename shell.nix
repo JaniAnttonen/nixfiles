@@ -30,6 +30,16 @@
       # pip installs to PATH
       export PATH=$PWD/Library/Python/3.8/bin/:$PATH
 
+      # Script ensuring nix installation
+      if nix --version ; then
+          echo "Nix installation found"
+      else
+          sudo rm /etc/bashrc.backup-before-nix
+          sudo rm /etc/bash.bashrc.backup-before-nix
+          sudo rm /etc/zshrc.backup-before-nix
+          yes | sh <(curl -L https://nixos.org/nix/install)
+      fi
+
       # Start up Starship shell
       eval "$(starship init zsh)"
     '';
