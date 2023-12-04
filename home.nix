@@ -5,7 +5,7 @@ let
     ./tmux.nix
     ./shell.nix
     ./neovim.nix
-    # ./vscode.nix
+    #./vscode.nix
   ];
 
 in {
@@ -44,6 +44,7 @@ in {
   # Packages
   home.packages = with pkgs; [
     alacritty
+    act
     awscli
     bat
     bun
@@ -58,6 +59,7 @@ in {
     graphviz
     gnupg
     libiconv
+    leiningen
     nodejs
     nodePackages.pnpm
     nodePackages.node-gyp
@@ -69,7 +71,8 @@ in {
     protobuf
     fish
     rustup
-    vscode-with-extensions
+    #vscode-with-extensions
+    #vscode-utils
     wget
     yarn
     zola
@@ -77,7 +80,7 @@ in {
     tmux
     tectonic
   ];
-
+  
   # Git config
   programs.git = {
     enable = true;

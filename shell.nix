@@ -27,6 +27,12 @@
       # Cargo bins to path
       export PATH="$HOME/.cargo/bin:$PATH"
 
+      # Scarb path
+      export PATH="$HOME/.local/bin:$PATH"
+
+      # Cairo install from source
+      export PATH="$HOME/dev/eq/starknet/cairo/target/release:$PATH"
+
       # pip installs to PATH
       export PATH=$PWD/Library/Python/3.8/bin/:$PATH
 
