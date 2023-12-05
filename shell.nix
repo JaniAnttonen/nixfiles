@@ -46,6 +46,9 @@
           yes | sh <(curl -L https://nixos.org/nix/install)
       fi
 
+      # Hook Direnv to shell
+      eval "$(direnv hook zsh)"
+
       # Start up Starship shell
       eval "$(starship init zsh)"
     '';
