@@ -50,6 +50,7 @@ in {
     bun
     cachix
     curl
+    direnv
     docker
     docker-compose
     docker-machine
