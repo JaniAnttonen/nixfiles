@@ -27,6 +27,9 @@
       # Cargo bins to path
       export PATH="$HOME/.cargo/bin:$PATH"
 
+      # Go bin to path
+      export PATH="$HOME/go/bin:$PATH"
+
       # Scarb path
       export PATH="$HOME/.local/bin:$PATH"
 
