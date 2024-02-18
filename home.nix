@@ -80,6 +80,7 @@ in {
     python3
     tmux
     tectonic
+    solc
   ];
   
   # Git config

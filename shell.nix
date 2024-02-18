@@ -30,6 +30,9 @@
       # Go bin to path
       export PATH="$HOME/go/bin:$PATH"
 
+      # Python 3.9 bin path
+      export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+
       # Scarb path
       export PATH="$HOME/.local/bin:$PATH"
 
