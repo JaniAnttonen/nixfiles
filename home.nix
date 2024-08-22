@@ -53,7 +53,6 @@ in {
     direnv
     docker
     docker-compose
-    docker-machine
     elixir
     erlang
     fzf
