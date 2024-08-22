@@ -74,6 +74,7 @@ in {
     rustup
     #vscode-with-extensions
     #vscode-utils
+    wezterm
     wget
     yarn
     zola
@@ -81,6 +82,7 @@ in {
     tmux
     tectonic
     solc
+    restic
   ];
   
   # Git config
