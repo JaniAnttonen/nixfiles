@@ -41,11 +41,15 @@ in {
     enableZshIntegration = true;
   };
 
+  # Wezterm
+
+
   # Packages
   home.packages = with pkgs; [
     alacritty
     act
-    awscli
+    #awscli
+    awscli2
     bat
     bun
     cachix
