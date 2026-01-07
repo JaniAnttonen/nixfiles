@@ -41,7 +41,7 @@
         vim-polyglot
 
         # LaTeX support
-        vimtex
+        # vimtex  # Temporarily disabled due to build failure with fzf-lua
 
         # vim languagetool, grammar checking
         vim-grammarous
@@ -59,10 +59,9 @@
         # Coc
         coc-nvim
         coc-json
-        coc-python
         coc-tsserver
         coc-rust-analyzer
-        coc-vimtex
+        # coc-vimtex  # Temporarily disabled (depends on vimtex)
 
         # Distraction free writing
         goyo

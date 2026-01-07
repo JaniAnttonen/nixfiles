@@ -64,6 +64,7 @@ in {
     gnupg
     libiconv
     leiningen
+    lcov
     nodejs
     nodePackages.pnpm
     nodePackages.node-gyp
@@ -93,5 +94,11 @@ in {
     enable = true;
     userName = "JaniAnttonen";
     userEmail = "jani.anttonen@protonmail.ch";
+  };
+
+  # Fix fcitx5 compatibility issue with recent nixpkgs
+  i18n.inputMethod = {
+    enabled = null;
+    fcitx5.fcitx5-with-addons = pkgs.kdePackages.fcitx5-with-addons or pkgs.emptyDirectory;
   };
 }
