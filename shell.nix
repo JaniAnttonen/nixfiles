@@ -11,7 +11,7 @@
     enableCompletion = true;
     history.extended = true;
 
-    initExtra = ''
+    initContent = ''
       export TERM="xterm-256color"
       bindkey -e
 

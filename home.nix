@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 let
+  username = builtins.getEnv "USER";
+  homeDirectory = builtins.getEnv "HOME";
   imports = [
     ./tmux.nix
     ./shell.nix
@@ -13,8 +15,8 @@ in {
   
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
-  home.username = "jani";
-  home.homeDirectory = "/Users/jani";
+  home.username = username;
+  home.homeDirectory = homeDirectory;
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
@@ -87,18 +89,14 @@ in {
     tectonic
     solc
     restic
+    #qview  # Not available on macOS (pulls in kimageformats)
   ];
   
   # Git config
   programs.git = {
     enable = true;
-    userName = "JaniAnttonen";
-    userEmail = "jani.anttonen@protonmail.ch";
+    settings.user.name = "JaniAnttonen";
+    settings.user.email = "jani.anttonen@protonmail.ch";
   };
 
-  # Fix fcitx5 compatibility issue with recent nixpkgs
-  i18n.inputMethod = {
-    enabled = null;
-    fcitx5.fcitx5-with-addons = pkgs.kdePackages.fcitx5-with-addons or pkgs.emptyDirectory;
-  };
 }
