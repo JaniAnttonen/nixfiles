@@ -68,6 +68,7 @@ in {
     leiningen
     lcov
     nodejs
+    opencode
     nodePackages.pnpm
     nodePackages.node-gyp
     openssl
@@ -98,5 +99,6 @@ in {
     settings.user.name = "JaniAnttonen";
     settings.user.email = "jani.anttonen@protonmail.ch";
   };
+
 
 }
