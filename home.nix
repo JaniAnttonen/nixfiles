@@ -66,6 +66,7 @@ in {
     gnupg
     libiconv
     leiningen
+    mise
     lcov
     nodejs
     opencode

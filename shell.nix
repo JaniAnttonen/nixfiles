@@ -48,6 +48,9 @@
       # pip installs to PATH
       export PATH=$PWD/Library/Python/3.8/bin/:$PATH
 
+      # bun global installs to PATH
+      export PATH="$HOME/.bun/bin:$PATH"
+
       # Script ensuring nix installation
       if nix --version ; then
           echo "Nix installation found"
